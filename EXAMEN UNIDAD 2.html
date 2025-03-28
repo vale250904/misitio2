@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN UNIDAD 2</title>
+</head>
+<body bgcolor="#72FF19">
+    <center><h1><b>UNIVERSIDAD TECNOLÓGICA DE TULA-TEPEJI</b></h1></center>
+    <center><h1><b></b>TSU EN TECNOLÓGIAS DE LA INFORMACIÓN</b></h1></center>
+    <center><h2>EMPRESA XYZ INC. SA. de CV.</h2></center>
+    <center><h5>ALUMNO: JUAN VALENTIN SANCHEZ ANGELES.</h5></center>
+
+<form id="formulario">
+    <center>
+        <table border="2">
+            <tr style= "background-color: rgb(8, 235, 231);">
+            <th>CLAVE:</th>
+            <th>NOMBRE:</th>
+            <th>CORREO:</th>
+            <th>FECHA DE NACIMIENTO:</th>
+            <th>SEXO:</th>
+            <th>SUELDO BASE:</th>
+            <th>DIAS TRABAJADOS:</th>
+            <th>BONO:</th>
+            <th>BOTON</th>
+            <th>DESCUENTO (7%):</th>
+            <th>BOTON</th>
+            <th>SUELDO NETO:</th>
+            </tr>
+
+            <tr>
+            <td><input type="number" name="txtClave1" id="txtClave1" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre1" id="txtNombre1" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo1" id="txtcorreo1" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha1" id="txtfecha1" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base1" id="txtsueldo base1" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados1" id="txtdias trabajados1" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono1" id="txtBono1" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento1" id="btndescuento1" value="Calcular" onclick="descuentodel1()"></td>
+            <td><input type="number" name="txtDescuento1" id="txtdescuento1"></td>
+            <td><input type="button" name="btnsueldo1" id="sueldo1" value="Calcular" onclick="SUELDO1()"></td>
+            <td><input type="number" name="txtSueldo neto1" id="txtSueldo neto1"></td>
+            </tr>
+
+            <tr>
+            <td><input type="number" name="txtClave2" id="txtClave2" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre2" id="txtNombre2" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo2" id="txtcorreo2" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha2" id="txtfecha2" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base2" id="txtsueldo base2" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados2" id="txtdias trabajados2" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono2" id="txtBono2" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento2" id="btndescuento2" value="Calcular" onclick="descuentodel2()"></td>
+            <td><input type="number" name="txtDescuento2" id="txtdescuento2"></td>
+            <td><input type="button" name="btnsueldo2" id="sueldo2" value="Calcular" onclick="SUELDO2()"></td>
+            <td><input type="number" name="txtSueldo neto2" id="txtSueldo neto2"></td>
+            </tr>
+
+            <tr>
+            <td><input type="number" name="txtClave3" id="txtClave3" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre3" id="txtNombre3" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo3" id="txtcorreo3" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha3" id="txtfecha3" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base3" id="txtsueldo base3" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados3" id="txtdias trabajados3" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono3" id="txtBono3" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento3" id="btndescuento3" value="Calcular" onclick="descuentodel3()"></td>
+            <td><input type="number" name="txtDescuento3" id="txtdescuento3"></td>
+            <td><input type="button" name="btnsueldo3" id="sueldo3" value="Calcular" onclick="SUELDO3()"></td>
+            <td><input type="number" name="txtSueldo neto3" id="txtSueldo neto3"></td>
+            </tr>
+            
+            <tr>
+            <td><input type="number" name="txtClave4" id="txtClave4" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre4" id="txtNombre4" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo4" id="txtcorreo4" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha4" id="txtfecha4" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base4" id="txtsueldo base4" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados4" id="txtdias trabajados4" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono4" id="txtBono4" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento4" id="btndescuento4" value="Calcular" onclick="descuentodel4()"></td>
+            <td><input type="number" name="txtDescuento4" id="txtdescuento4"></td>
+            <td><input type="button" name="btnsueldo4" id="sueldo4" value="Calcular" onclick="SUELDO4()"></td>
+            <td><input type="number" name="txtSueldo neto4" id="txtSueldo neto4"></td>
+            </tr>
+
+            <tr>
+            <td><input type="number" name="txtClave5" id="txtClave5" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre5" id="txtNombre5" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo5" id="txtcorreo5" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha5" id="txtfecha5" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base5" id="txtsueldo base5" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados5" id="txtdias trabajados5" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono5" id="txtBono5" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento5" id="btndescuento5" value="Calcular" onclick="descuentodel5()"></td>
+            <td><input type="number" name="txtDescuento5" id="txtdescuento5"></td>
+            <td><input type="button" name="btnsueldo5" id="sueldo5" value="Calcular" onclick="SUELDO5()"></td>
+            <td><input type="number" name="txtSueldo neto5" id="txtSueldo neto5"></td>
+            </tr>
+
+            <tr>
+            <td><input type="number" name="txtClave6" id="txtClave6" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre6" id="txtNombre6" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo6" id="txtcorreo6" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha6" id="txtfecha6" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base6" id="txtsueldo base6" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados6" id="txtdias trabajados6" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono6" id="txtBono6" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento6" id="btndescuento6" value="Calcular" onclick="descuentodel6()"></td>
+            <td><input type="number" name="txtDescuento6" id="txtdescuento6"></td>
+            <td><input type="button" name="btnsueldo6" id="sueldo6" value="Calcular" onclick="SUELDO6()"></td>
+            <td><input type="number" name="txtSueldo neto6" id="txtSueldo neto6"></td>
+            </tr>
+
+            <tr>
+            <td><input type="number" name="txtClave7" id="txtClave7" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre7" id="txtNombre7" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo7" id="txtcorreo7" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha7" id="txtfecha7" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base7" id="txtsueldo base7" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados7" id="txtdias trabajados7" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono7" id="txtBono7" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento7" id="btndescuento7" value="Calcular" onclick="descuentodel7()"></td>
+            <td><input type="number" name="txtDescuento7" id="txtdescuento7"></td>
+            <td><input type="button" name="btnsueldo7" id="sueldo7" value="Calcular" onclick="SUELDO7()"></td>
+            <td><input type="number" name="txtSueldo neto7" id="txtSueldo neto7"></td>
+            </tr>
+
+            <tr>
+            <td><input type="number" name="txtClave8" id="txtClave8" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre8" id="txtNombre8" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo8" id="txtcorreo8" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha8" id="txtfecha8" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base8" id="txtsueldo base8" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados8" id="txtdias trabajados8" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono8" id="txtBono8" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento8" id="btndescuento8" value="Calcular" onclick="descuentodel8()"></td>
+            <td><input type="number" name="txtDescuento8" id="txtdescuento8"></td>
+            <td><input type="button" name="btnsueldo8" id="sueldo8" value="Calcular" onclick="SUELDO8()"></td>
+            <td><input type="number" name="txtSueldo neto8" id="txtSueldo neto8"></td>
+            </tr>
+
+            <tr>
+            <td><input type="number" name="txtClave9" id="txtClave9" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre9" id="txtNombre9" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo9" id="txtcorreo9" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha9" id="txtfecha9" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base9" id="txtsueldo base9" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados9" id="txtdias trabajados9" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono9" id="txtBono9" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento9" id="btndescuento9" value="Calcular" onclick="descuentodel9()"></td>
+            <td><input type="number" name="txtDescuento9" id="txtdescuento9"></td>
+            <td><input type="button" name="btnsueldo9" id="sueldo9" value="Calcular" onclick="SUELDO9()"></td>
+            <td><input type="number" name="txtSueldo neto9" id="txtSueldo neto9"></td>
+            </tr>
+
+            <tr>
+            <td><input type="number" name="txtClave10" id="txtClave10" placeholder="ingrese su clave aqui." required></td>
+            <td><input type="text" name="txtNombre10" id="txtNombre10" placeholder="ingrese su nombre aqui." requiredrequired></td>
+            <td><input type="email" name="txtcorreo10" id="txtcorreo10" placeholder="usuario@dominio.com" required></td>
+            <td><input type="date" value="0000-00-00" name="txtfecha10" id="txtfecha10" required></td>
+            <td><input type="radio" name="sexo" id="hombre" value="h">hombre <input type="radio" name="mujer" id="mujer">mujer </td>
+            <td><input type="number" name="txtsueldo base10" id="txtsueldo base10" placeholder="ingrese su pago diario" required></td>
+            <td><input type="number" name="txtdias trabajados10" id="txtdias trabajados10" placeholder="ingrese aqui cuantos dias trabajo" requered></td>
+            <td><input type="number" name="txtBono10" id="txtBono10" placeholder="ingrse la cantidad de bono" requiered></td>
+            <td><input type="button" name="btndescuento10" id="btndescuento10" value="Calcular" onclick="descuentodel10()"></td>
+            <td><input type="number" name="txtDescuento10" id="txtdescuento10"></td>
+            <td><input type="button" name="btnsueldo10" id="btnsueldo10" value="Calcular" onclick="SUELDO10()"></td>
+            <td><input type="number" name="txtSueldo neto10" id="txtSueldo neto10"></td>
+            </tr>
+
+            
+        </table>
+    </center>
+</form>
+<center>
+    <br>
+    <br>
+    <input type="reset" value="Limpiar" onclick="Limpiar()">
+    <br>
+    <br>
+    <td><input type="button" name="btntotal" id="btntotal" value="Calcular todos los sueldos" onclick="TOTAL()"></td>
+    <td><input type="number" name="txttotal" id="txttotal"></td>
+</center>
+
+    
+
+<script type="text/javascript">
+
+    function descuentodel1() {
+    var SD=0;
+    var DT=0;
+    var BN=0;
+    var DESC1=0;
+          
+    SD=parseInt(document.getElementById("txtsueldo base1").value);
+    DT=parseInt(document.getElementById("txtdias trabajados1").value)
+    BN=parseInt(document.getElementById("txtBono1").value)
+
+    DESC1=(SD*DT+BN)*7/100;
+
+    document.getElementById("txtdescuento1").value=DESC1;
+
+    }  
+        
+        function SUELDO1(){
+        var SD=0;
+        var DT=0;
+        var BN=0;
+        var DESC1=0;
+        var sueldo_N=0;
+
+        SD=parseInt(document.getElementById("txtsueldo base1").value);
+        DT=parseInt(document.getElementById("txtdias trabajados1").value)
+        BN=parseInt(document.getElementById("txtBono1").value)
+        DESC1=parseInt(document.getElementById("txtdescuento1").value)
+
+        sueldo_N=(SD*DT+BN) - DESC1;
+
+        document.getElementById("txtSueldo neto1").value=sueldo_N;
+        }
+
+//inica el 2
+
+        function descuentodel2() {
+            var SD=0;
+            var DT=0;
+            var BN=0;
+            var DESC2=0;
+          
+            SD=parseInt(document.getElementById("txtsueldo base2").value);
+            DT=parseInt(document.getElementById("txtdias trabajados2").value)
+            BN=parseInt(document.getElementById("txtBono2").value)
+
+            DESC2=(SD*DT+BN)*7/100;
+
+            document.getElementById("txtdescuento2").value=DESC2;
+
+        }  
+        
+        function SUELDO2(){
+        var SD=0;
+        var DT=0;
+        var BN=0;
+        var DESC2=0;
+        var sueldo_N=0;
+
+        SD=parseInt(document.getElementById("txtsueldo base2").value);
+        DT=parseInt(document.getElementById("txtdias trabajados2").value)
+        BN=parseInt(document.getElementById("txtBono2").value)
+        DESC2=parseInt(document.getElementById("txtdescuento2").value)
+
+        sueldo_N=(SD*DT+BN) - DESC2;
+
+        document.getElementById("txtSueldo neto2").value=sueldo_N;
+        }
+
+// inica el 3
+function descuentodel3() {
+    var SD=0;
+    var DT=0;
+    var BN=0;
+    var DESC3=0;
+  
+    SD=parseInt(document.getElementById("txtsueldo base3").value);
+    DT=parseInt(document.getElementById("txtdias trabajados3").value)
+    BN=parseInt(document.getElementById("txtBono3").value)
+
+    DESC3=(SD*DT+BN)*7/100;
+
+    document.getElementById("txtdescuento3").value=DESC3;
+
+}  
+
+function SUELDO3(){
+var SD=0;
+var DT=0;
+var BN=0;
+var DESC3=0;
+var sueldo_N=0;
+
+SD=parseInt(document.getElementById("txtsueldo base3").value);
+DT=parseInt(document.getElementById("txtdias trabajados3").value)
+BN=parseInt(document.getElementById("txtBono3").value)
+DESC3=parseInt(document.getElementById("txtdescuento3").value)
+
+sueldo_N=(SD*DT+BN) - DESC3;
+
+document.getElementById("txtSueldo neto3").value=sueldo_N;
+}
+
+// inicia el 4
+
+function descuentodel4() {
+    var SD=0;
+    var DT=0;
+    var BN=0;
+    var DESC4=0;
+  
+    SD=parseInt(document.getElementById("txtsueldo base4").value);
+    DT=parseInt(document.getElementById("txtdias trabajados4").value)
+    BN=parseInt(document.getElementById("txtBono4").value)
+
+    DESC4=(SD*DT+BN)*7/100;
+
+    document.getElementById("txtdescuento4").value=DESC4;
+
+}  
+
+function SUELDO4(){
+var SD=0;
+var DT=0;
+var BN=0;
+var DESC4=0;
+var sueldo_N=0;
+
+SD=parseInt(document.getElementById("txtsueldo base4").value);
+DT=parseInt(document.getElementById("txtdias trabajados4").value)
+BN=parseInt(document.getElementById("txtBono4").value)
+DESC4=parseInt(document.getElementById("txtdescuento4").value)
+
+sueldo_N=(SD*DT+BN) - DESC4;
+
+document.getElementById("txtSueldo neto4").value=sueldo_N;
+}
+
+// inicia el 5
+
+function descuentodel5() {
+    var SD=0;
+    var DT=0;
+    var BN=0;
+    var DESC5=0;
+  
+    SD=parseInt(document.getElementById("txtsueldo base5").value);
+    DT=parseInt(document.getElementById("txtdias trabajados5").value)
+    BN=parseInt(document.getElementById("txtBono5").value)
+
+    DESC5=(SD*DT+BN)*7/100;
+
+    document.getElementById("txtdescuento5").value=DESC5;
+
+}  
+
+function SUELDO5(){
+var SD=0;
+var DT=0;
+var BN=0;
+var DESC5=0;
+var sueldo_N=0;
+
+SD=parseInt(document.getElementById("txtsueldo base5").value);
+DT=parseInt(document.getElementById("txtdias trabajados5").value)
+BN=parseInt(document.getElementById("txtBono5").value)
+DESC5=parseInt(document.getElementById("txtdescuento5").value)
+
+sueldo_N=(SD*DT+BN) - DESC5;
+
+document.getElementById("txtSueldo neto5").value=sueldo_N;
+}
+
+// inicia el 6
+
+function descuentodel6() {
+    var SD=0;
+    var DT=0;
+    var BN=0;
+    var DESC6=0;
+  
+    SD=parseInt(document.getElementById("txtsueldo base6").value);
+    DT=parseInt(document.getElementById("txtdias trabajados6").value)
+    BN=parseInt(document.getElementById("txtBono6").value)
+
+    DESC6=(SD*DT+BN)*7/100;
+
+    document.getElementById("txtdescuento6").value=DESC6;
+
+}  
+
+function SUELDO6(){
+var SD=0;
+var DT=0;
+var BN=0;
+var DESC6=0;
+var sueldo_N=0;
+
+SD=parseInt(document.getElementById("txtsueldo base6").value);
+DT=parseInt(document.getElementById("txtdias trabajados6").value)
+BN=parseInt(document.getElementById("txtBono6").value)
+DESC6=parseInt(document.getElementById("txtdescuento6").value)
+
+sueldo_N=(SD*DT+BN) - DESC6;
+
+document.getElementById("txtSueldo neto6").value=sueldo_N;
+}
+
+// inicia el 7 
+
+function descuentodel7() {
+    var SD=0;
+    var DT=0;
+    var BN=0;
+    var DESC7=0;
+  
+    SD=parseInt(document.getElementById("txtsueldo base7").value);
+    DT=parseInt(document.getElementById("txtdias trabajados7").value)
+    BN=parseInt(document.getElementById("txtBono7").value)
+
+    DESC7=(SD*DT+BN)*7/100;
+
+    document.getElementById("txtdescuento7").value=DESC7;
+
+}  
+
+function SUELDO7(){
+var SD=0;
+var DT=0;
+var BN=0;
+var DESC7=0;
+var sueldo_N=0;
+
+SD=parseInt(document.getElementById("txtsueldo base7").value);
+DT=parseInt(document.getElementById("txtdias trabajados7").value)
+BN=parseInt(document.getElementById("txtBono7").value)
+DESC7=parseInt(document.getElementById("txtdescuento7").value)
+
+sueldo_N=(SD*DT+BN) - DESC7;
+
+document.getElementById("txtSueldo neto7").value=sueldo_N;
+}
+
+// inicia el 8
+
+function descuentodel8() {
+    var SD=0;
+    var DT=0;
+    var BN=0;
+    var DESC8=0;
+  
+    SD=parseInt(document.getElementById("txtsueldo base8").value);
+    DT=parseInt(document.getElementById("txtdias trabajados8").value)
+    BN=parseInt(document.getElementById("txtBono8").value)
+
+    DESC8=(SD*DT+BN)*7/100;
+
+    document.getElementById("txtdescuento8").value=DESC8;
+
+}  
+
+function SUELDO8(){
+var SD=0;
+var DT=0;
+var BN=0;
+var DESC8=0;
+var sueldo_N=0;
+
+SD=parseInt(document.getElementById("txtsueldo base8").value);
+DT=parseInt(document.getElementById("txtdias trabajados8").value)
+BN=parseInt(document.getElementById("txtBono8").value)
+DESC8=parseInt(document.getElementById("txtdescuento8").value)
+
+sueldo_N=(SD*DT+BN) - DESC8;
+
+document.getElementById("txtSueldo neto8").value=sueldo_N;
+}
+
+// inicia el 9
+
+function descuentodel9() {
+    var SD=0;
+    var DT=0;
+    var BN=0;
+    var DESC9=0;
+  
+    SD=parseInt(document.getElementById("txtsueldo base9").value);
+    DT=parseInt(document.getElementById("txtdias trabajados9").value)
+    BN=parseInt(document.getElementById("txtBono9").value)
+
+    DESC9=(SD*DT+BN)*7/100;
+
+    document.getElementById("txtdescuento9").value=DESC9;
+
+}  
+
+function SUELDO9(){
+var SD=0;
+var DT=0;
+var BN=0;
+var DESC9=0;
+var sueldo_N=0;
+
+SD=parseInt(document.getElementById("txtsueldo base9").value);
+DT=parseInt(document.getElementById("txtdias trabajados9").value)
+BN=parseInt(document.getElementById("txtBono9").value)
+DESC9=parseInt(document.getElementById("txtdescuento9").value)
+
+sueldo_N=(SD*DT+BN) - DESC9;
+
+document.getElementById("txtSueldo neto9").value=sueldo_N;
+}
+
+//inicia el 10
+
+function descuentodel10() {
+    var SD=0;
+    var DT=0;
+    var BN=0;
+    var DESC10=0;
+  
+    SD=parseInt(document.getElementById("txtsueldo base10").value);
+    DT=parseInt(document.getElementById("txtdias trabajados10").value)
+    BN=parseInt(document.getElementById("txtBono10").value)
+
+    DESC10=(SD*DT+BN)*7/100;
+
+    document.getElementById("txtdescuento10").value=DESC10;
+
+}  
+
+function SUELDO10(){
+var SD=0;
+var DT=0;
+var BN=0;
+var DESC10=0;
+var sueldo_N=0;
+
+SD=parseInt(document.getElementById("txtsueldo base10").value);
+DT=parseInt(document.getElementById("txtdias trabajados10").value)
+BN=parseInt(document.getElementById("txtBono10").value)
+DESC10=parseInt(document.getElementById("txtdescuento10").value)
+
+sueldo_N=(SD*DT+BN) - DESC10;
+
+document.getElementById("txtSueldo neto10").value=sueldo_N;
+}
+
+// sueldos 
+
+    function TOTAL() {
+        var total = 0;
+        for (var i = 1; i <= 10; i++) {
+          var sueldoNeto = parseInt(document.getElementById("txtSueldo neto" + i).value);
+          if (!isNaN(sueldoNeto)) {
+            total += sueldoNeto;
+          }
+        }
+        document.getElementById("txttotal").value = total;
+      }
+
+//limpiar
+function Limpiar(){
+    var resultado = parseInt(document.getElementById("txttotal").value);
+    if( resultado != null){
+        document.getElementById("txttotal").value = " ";
+    }
+    document.getElementById("formulario").reset();
+}
+  </script>       
+ </body>
+</html>
